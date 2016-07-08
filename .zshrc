@@ -3,9 +3,9 @@ HISTSIZE=500
 SAVEHIST=500
 bindkey -v
 
-zstyle :compinstall filename '/home/dean/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
-autoload -Uz compinit promptinit zmv
+autoload -Uz compinit promptinit
 compinit
 promptinit
 
@@ -19,11 +19,10 @@ alias la='ls -Ah --group-directories-first'
 alias l='ls -lCh --group-directories-first --color=auto'
 alias ls='ls -lh --group-directories-first --color=auto'
 alias yt='youtube-dl -o "%(title)s.%(ext)s"'
-alias up='sudo pacman -Syu ; cower -uvd'
+alias up='sudo pacman -Syu ; cower -uvdd'
 alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
 alias ix='curl -F "f:1=<-" ix.io'
 alias cl='clear'
 alias sshbf='sudo cat /proc/net/xt_recent/sshbf'
 alias iplog='journalctl -k | grep "IN=.*OUT=.*" | less'
 alias mini='ssh dean@mini'
-alias miniremote='ssh -p 12414 dean@cuntface.airdns.org'
