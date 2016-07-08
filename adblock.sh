@@ -1,6 +1,6 @@
 #!/bin/bash
 # original : https://github.com/jacobsalmela/pi-hole/blob/master/gravity-adv.sh
-
+# but made to work for dnsmasq needs (black/whitelisting)
 destinationIP="192.168.1.3"
 finaloutlist='~/host.ads'
 tempoutlist="tempoutlist.tmp"
@@ -23,7 +23,7 @@ curl -s http://someonewhocares.org/hosts/hosts | grep -v "#" | sed '/^$/d' | sed
 echo "Getting Mother of All Ad Blocks list..." 
 curl -A 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0' -e http://forum.xda-developers.com/ http://adblock.mahakala.is/ | grep -v "#" | awk '{print $2}' | sort >> $tempoutlist
 
-# Remove entries from the whitelist file if it exists at the root of the current user's home folder
+# Remove entries from the whitelist and add from the blacklist...
 echo "Removing duplicates and formatting the list of domains..."
 cat blacklist >> $tempoutlist
 grep -xvf whitelist $tempoutlist > $tempout
