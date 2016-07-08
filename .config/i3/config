@@ -147,7 +147,6 @@ bindsym $mod+r mode "resize"
 
 # Floating
   for_window [class="Lxappearance"] floating enable
-  for_window [class="Audacious"] floating enable
   for_window [class="Pavucontrol"] floating enable
   for_window [class="VirtualBox"] floating enable
   for_window [class="smplayer"] floating enable
@@ -203,12 +202,6 @@ bindsym $mod+F6 exec --no-startup-id xbacklight -dec 20 # decrease screen bright
 #bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
-#exec --no-startup-id xfce4-terminal --role=t1
-#exec --no-startup-id xfce4-terminal --role=t2
-#exec --no-startup-id xfce4-terminal --role=t3
-#exec --no-startup-id xfce4-terminal --role=t4
-#exec --no-startup-id xfce4-terminal --role=t5
-#exec --no-startup-id xfce4-terminal --role=t6
 exec --no-startup-id urxvtc --title t1
 exec --no-startup-id urxvtc --title t2
 exec --no-startup-id urxvtc --title t3
