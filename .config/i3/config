@@ -89,6 +89,7 @@ set $workspace2 "2: "
 set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
+set $workspace6 "6: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1 
@@ -118,6 +119,7 @@ assign [class="google-chrome"] $workspace2
 assign [class="Pcmanfm"] $workspace3
 assign [class="Gthumb"] $workspace4
 assign [class="Gimp-2.8"] $workspace5
+assign [class="VirtualBox"] $workspace6
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
