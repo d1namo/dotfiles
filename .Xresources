@@ -1,9 +1,9 @@
 Xcursor.theme: DMZ-White
 
-URxvt.font:                xft:UbuntuMono:style=Regular:pixelsize=16
-URxvt.boldFont:            xft:UbuntuMono:style=Bold:pixelsize=16
-URxvt.italicFont:          xft:UbuntuMono:style=Italic:pixelsize=16
-URxvt.boldItalicFont:      xft:UbuntuMono:style=Bold Italic:pixelsize=16
+URxvt.font:                xft:UbuntuMono:style=Regular:size=12
+URxvt.boldFont:            xft:UbuntuMono:style=Bold:size=12
+URxvt.italicFont:          xft:UbuntuMono:style=Italic:size=12
+URxvt.boldItalicFont:      xft:UbuntuMono:style=Bold Italic:size=12
 URxvt.letterSpace:         -1
 
 *background: #232C31
@@ -41,7 +41,6 @@ URxvt.scrollBar:           false
 ! URxvt*fading:              30
 
 URxvt.url-launcher:        /usr/bin/google-chrome-stable
-URxvt.colorUL:             #7780a1
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
@@ -52,3 +51,9 @@ URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true
 
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.matcher.button: 1
+! URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.colorUL: #4682B4
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
