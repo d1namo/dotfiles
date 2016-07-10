@@ -9,7 +9,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splith",
-            "percent": 0.2,
+            "percent": 0.15,
             "type": "con",
             "nodes": [
                 {
