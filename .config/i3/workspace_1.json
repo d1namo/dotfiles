@@ -26,10 +26,10 @@
                     "percent": 0.65,
                     "swallows": [
                        {
-                        "class": "^URxvt$",
-                        "instance": "^urxvt$",
+                        "class": "^Termite$",
+                        "instance": "^termite$",
                         "transient_for": "^$",
-                        "title": "^t1$"
+                        "window_role": "^t1$"
                        }
                     ],
                     "type": "con"
@@ -48,10 +48,10 @@
                     "percent": 0.35,
                     "swallows": [
                        {
-                        "class": "^URxvt$",
-                        "instance": "^urxvt$",
+                        "class": "^Termite$",
+                        "instance": "^termite$",
                         "transient_for": "^$",
-                        "title": "^t2$"
+                        "window_role": "^t2$"
                        }
                     ],
                     "type": "con"
@@ -86,10 +86,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^URxvt$",
-                                "instance": "^urxvt$",
+                                "class": "^Termite$",
+                                "instance": "^termite$",
                                 "transient_for": "^$",
-                                "title": "^t3$"
+                                "window_role": "^t3$"
                                }
                             ],
                             "type": "con"
@@ -108,10 +108,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^URxvt$",
-                                "instance": "^urxvt$",
+                                "class": "^Termite$",
+                                "instance": "^termite$",
                                 "transient_for": "^$",
-                                "title": "^t5$"
+                                "window_role": "^t5$"
                                }
                             ],
                             "type": "con"
@@ -139,10 +139,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^URxvt$",
-                                "instance": "^urxvt$",
+                                "class": "^Termite$",
+                                "instance": "^termite$",
                                 "transient_for": "^$",
-                                "title": "^t4$"
+                                "window_role": "^t4$"
                                }
                             ],
                             "type": "con"
@@ -161,10 +161,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^URxvt$",
-                                "instance": "^urxvt$",
+                                "class": "^Termite$",
+                                "instance": "^termite$",
                                 "transient_for": "^$",
-                                "title": "^t6$"
+                                "window_role": "^t6$"
                                }
                             ],
                             "type": "con"

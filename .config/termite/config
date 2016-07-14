@@ -1,0 +1,75 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+scrollback_lines = 1000
+font             = Ubuntu Mono 11
+clickable_url    = true
+browser          = google-chrome-stable
+allow_bold       = true
+allow_italic     = true
+visible_bell     = false
+mouse_autohide   = true
+audible_bell     = true
+
+[colors]
+foreground      = #d1d4e0
+foreground_bold = #d1d4e0
+cursor          = #d1d4e0
+background      = #101218
+
+# 16 color space
+color0  = #101218
+color1  = #ee829f
+color2  = #a5ffe1
+color3  = #ffefcc
+color4  = #97bbf7
+color5  = #c0b7f9
+color6  = #97e0ff
+color7  = #d1d4e0
+color8  = #7780a1
+color9  = #ee829f
+color10 = #a5ffe1
+color11 = #ffefcc
+color12 = #97bbf7
+color13 = #c0b7f9
+color14 = #97e0ff
+color15 = #ffffff
+
+# 256 color space
+color16 = #f99170
+color17 = #fcc09e
+color18 = #1f222d
+color19 = #252936
+color20 = #C0C5CE
+color21 = #C9CCDB
+
+
+# Solarized dark color scheme
+
+# [colors]
+#foreground = #839496
+#foreground_bold = #eee8d5
+#foreground_dim = #888888
+#background = #002b36
+#cursor = #93a1a1
+
+# if unset, will reverse foreground and background
+#highlight = #839496
+
+# colors from color0 to color254 can be set
+#color0 = #073642
+#color1 = #dc322f
+#color2 = #859900
+#color3 = #b58900
+#color4 = #268bd2
+#color5 = #d33682
+#color6 = #2aa198
+#color7 = #eee8d5
+#color8 = #002b36
+#color9 = #cb4b16
+#color10 = #586e75
+#color11 = #657b83
+#color12 = #839496
+#color13 = #6c71c4
+#color14 = #93a1a1
+#color15 = #fdf6e3

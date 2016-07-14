@@ -30,8 +30,8 @@ font pango:Ubuntu 11
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec --no-startup-id xfce4-terminal 
-bindsym $mod+Return exec --no-startup-id urxvtc
+# bindsym $mod+Return exec --no-startup-id urxvtc
+bindsym $mod+Return exec --no-startup-id termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -86,7 +86,7 @@ bindsym $mod+a focus parent
 
 set $workspace1 "1: "
 set $workspace2 "2: "
-set $workspace3 "3: "
+set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
@@ -201,14 +201,20 @@ bindsym $mod+F6 exec --no-startup-id xbacklight -dec 20 # decrease screen bright
 # Touchpad controls
 #bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
-#exec --no-startup-id compton -b
+# exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
-exec --no-startup-id urxvtc --title t1
-exec --no-startup-id urxvtc --title t2
-exec --no-startup-id urxvtc --title t3
-exec --no-startup-id urxvtc --title t4
-exec --no-startup-id urxvtc --title t5
-exec --no-startup-id urxvtc --title t6
+exec --no-startup-id termite -r t1
+exec --no-startup-id termite -r t2
+exec --no-startup-id termite -r t3
+exec --no-startup-id termite -r t4
+exec --no-startup-id termite -r t5
+exec --no-startup-id termite -r t6
+# exec --no-startup-id urxvtc --title t1
+# exec --no-startup-id urxvtc --title t2
+# exec --no-startup-id urxvtc --title t3
+# exec --no-startup-id urxvtc --title t4
+# exec --no-startup-id urxvtc --title t5
+# exec --no-startup-id urxvtc --title t6
 exec google-chrome-stable
 exec --no-startup-id pcmanfm
 exec --no-startup-id pcmanfm
