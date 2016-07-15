@@ -12,9 +12,12 @@
 set $mod Mod4
 
 #i3-gaps config
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
+hide_edge_borders both
 gaps inner 10
-gaps outer 2
+gaps outer 5
+new_window pixel 1
+new_float pixel 1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -167,13 +170,12 @@ set $urgent-bg-color		#5294e2
 #E53935
 
 # Widow Colours
-#				border			background			text			indicator
-client.focused			$bg-color		$bg-color			$text-color		#00ff00
-client.focused_inactive		$inactive-bg-color	$inactive-bg-color		$inactive-text-color	#00ff00
-client.unfocused		$inactive-bg-color	$inactive-bg-color		$inactive-text-color	#00ff00
-client.urgent			$urgent-bg-color	$urgent-bg-color		$text-color		#00ff00
+#				border			background			text
+client.focused			$bg-color		$urgent-bg-color		$text-color
+client.focused_inactive		$inactive-bg-color	$inactive-bg-color		$inactive-text-color
+client.unfocused		$inactive-bg-color	$inactive-bg-color		$inactive-text-color
+client.urgent			$urgent-bg-color	$urgent-bg-color		$text-color
 
-hide_edge_borders both
 
 # Start i3bar to display a workspace bar
 bar {
@@ -209,12 +211,6 @@ bindsym $mod+F6 exec --no-startup-id xbacklight -dec 20 # decrease screen bright
 
 # exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
-#exec --no-startup-id termite -r t1
-#exec --no-startup-id termite -r t2
-#exec --no-startup-id termite -r t3
-#exec --no-startup-id termite -r t4
-#exec --no-startup-id termite -r t5
-#exec --no-startup-id termite -r t6
 exec --no-startup-id uxterm -title t1
 exec --no-startup-id uxterm -title t2
 exec --no-startup-id uxterm -title t3
