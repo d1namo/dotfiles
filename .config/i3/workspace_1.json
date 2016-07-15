@@ -26,10 +26,10 @@
                     "percent": 0.65,
                     "swallows": [
                        {
-                        "class": "^Termite$",
-                        "instance": "^termite$",
+                        "class": "^UXTerm$",
+                        "instance": "^xterm$",
                         "transient_for": "^$",
-                        "window_role": "^t1$"
+                        "title": "^t1$"
                        }
                     ],
                     "type": "con"
@@ -48,10 +48,10 @@
                     "percent": 0.35,
                     "swallows": [
                        {
-                        "class": "^Termite$",
-                        "instance": "^termite$",
+                        "class": "^UXTerm$",
+                        "instance": "^xterm$",
                         "transient_for": "^$",
-                        "window_role": "^t2$"
+                        "title": "^t2$"
                        }
                     ],
                     "type": "con"
@@ -86,10 +86,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^Termite$",
-                                "instance": "^termite$",
+                                "class": "^UXTerm$",
+                                "instance": "^xterm$",
                                 "transient_for": "^$",
-                                "window_role": "^t3$"
+                                "title": "^t3$"
                                }
                             ],
                             "type": "con"
@@ -108,10 +108,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^Termite$",
-                                "instance": "^termite$",
+                                "class": "^UXTerm$",
+                                "instance": "^xterm$",
                                 "transient_for": "^$",
-                                "window_role": "^t5$"
+                                "title": "^t5$"
                                }
                             ],
                             "type": "con"
@@ -139,10 +139,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^Termite$",
-                                "instance": "^termite$",
+                                "class": "^UXTerm$",
+                                "instance": "^xterm$",
                                 "transient_for": "^$",
-                                "window_role": "^t4$"
+                                "title": "^t4$"
                                }
                             ],
                             "type": "con"
@@ -161,10 +161,10 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^Termite$",
-                                "instance": "^termite$",
+                                "class": "^UXTerm$",
+                                "instance": "^xterm$",
                                 "transient_for": "^$",
-                                "window_role": "^t6$"
+                                "title": "^t6$"
                                }
                             ],
                             "type": "con"

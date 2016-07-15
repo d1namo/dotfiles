@@ -11,6 +11,11 @@
 
 set $mod Mod4
 
+#i3-gaps config
+for_window [class="^.*"] border pixel 0
+gaps inner 10
+gaps outer 2
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Ubuntu 11
@@ -30,8 +35,8 @@ font pango:Ubuntu 11
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec --no-startup-id urxvtc
-bindsym $mod+Return exec --no-startup-id termite
+# bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id uxterm
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -174,6 +179,7 @@ hide_edge_borders both
 bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
+#	font pango:Ubuntu 11
 	colors {
 		background $bg-color
 		separator #757575
@@ -203,18 +209,18 @@ bindsym $mod+F6 exec --no-startup-id xbacklight -dec 20 # decrease screen bright
 
 # exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
-exec --no-startup-id termite -r t1
-exec --no-startup-id termite -r t2
-exec --no-startup-id termite -r t3
-exec --no-startup-id termite -r t4
-exec --no-startup-id termite -r t5
-exec --no-startup-id termite -r t6
-# exec --no-startup-id urxvtc --title t1
-# exec --no-startup-id urxvtc --title t2
-# exec --no-startup-id urxvtc --title t3
-# exec --no-startup-id urxvtc --title t4
-# exec --no-startup-id urxvtc --title t5
-# exec --no-startup-id urxvtc --title t6
+#exec --no-startup-id termite -r t1
+#exec --no-startup-id termite -r t2
+#exec --no-startup-id termite -r t3
+#exec --no-startup-id termite -r t4
+#exec --no-startup-id termite -r t5
+#exec --no-startup-id termite -r t6
+exec --no-startup-id uxterm -title t1
+exec --no-startup-id uxterm -title t2
+exec --no-startup-id uxterm -title t3
+exec --no-startup-id uxterm -title t4
+exec --no-startup-id uxterm -title t5
+exec --no-startup-id uxterm -title t6
 exec google-chrome-stable
 exec --no-startup-id pcmanfm
 exec --no-startup-id pcmanfm
