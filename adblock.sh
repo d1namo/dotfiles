@@ -1,7 +1,7 @@
 #!/bin/bash
 # original : https://github.com/jacobsalmela/pi-hole/blob/master/gravity-adv.sh
-# but made to work for dnsmasq needs (black/whitelisting)
-# if you want to add or remove domains (whitelist/blacklist) then add the domain, eg: www.bing.com to file whitelist of blacklist in same folder as the script.  1 url per line.
+# but made to work for my dnsmasq needs (black/whitelisting) oh dats racist
+# if you want to add or remove domains (whitelist/blacklist) then add the domain, eg: www.bing.com to a file named whitelist or blacklist in same folder as the script.  1 url per line.
 
 destinationIP="192.168.1.3"  # your dnsmasq server
 finaloutlist='host.ads'      # the final finished file
