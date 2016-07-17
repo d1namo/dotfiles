@@ -8,7 +8,7 @@ finaloutlist='host.ads'      # the final finished file
 tempoutlist="tempoutlist.tmp" # temp file gets removed on completion.
 tempout="tempout.tmp"         # same as above
 
-#Grabs the lists from multiple sources.  Remove any you don't want.
+## Grabs the lists from multiple sources.  Remove any you don't want.
 echo "Getting yoyo ad list..." 
 curl -s -d mimetype=plaintext -d hostformat=unixhosts http://pgl.yoyo.org/adservers/serverlist.php? | sort > $tempoutlist
 
