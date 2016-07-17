@@ -4,7 +4,6 @@ Xft.hintstyle:  hintslight
 Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
-
 Xcursor.theme: DMZ-White
 !XTerm*locale: true
 !XTerm*utf8: 1
@@ -20,62 +19,58 @@ XTerm*ScrollKey: true
 xterm*metaSendsEscape: true
 XTerm*eightBitInput: False
 
-
-! URxvt.font:                xft:UbuntuMono:style=Regular:size=12
-! URxvt.boldFont:            xft:UbuntuMono:style=Bold:size=12
-! URxvt.italicFont:          xft:UbuntuMono:style=Italic:size=12
-! URxvt.boldItalicFont:      xft:UbuntuMono:style=Bold Italic:size=12
-! URxvt.letterSpace:         -1
-
-
-*background: #232C31
-*foreground: #C5C8C6
+! Pastel Colors
+! *background: #232C31
+! *foreground: #C5C8C6
 ! black
-*color0: #2D3C46
-*color8: #425059
+! *color0: #2D3C46
+! *color8: #425059
 ! red
-*color1: #A54242
-*color9: #CC6666
+! *color1: #A54242
+! *color9: #CC6666
 ! green
-*color2: #8C9440
-*color10: #B5BD68
+! *color2: #8C9440
+! *color10: #B5BD68
 ! yellow
-*color3: #DE935F
-*color11: #F0C674
+! *color3: #DE935F
+! *color11: #F0C674
 ! blue
-*color4: #5F819D
-*color12: #81A2BE
+! *color4: #5F819D
+! *color12: #81A2BE
 ! magenta
-*color5: #85678F
-*color13: #B294BB
+! *color5: #85678F
+! *color13: #B294BB
 ! cyan
-*color6: #5E8D87
-*color14: #8ABEB7
+! *color6: #5E8D87
+! *color14: #8ABEB7
 ! white
-*color7: #6C7A80
-*color15: #C5C8C6
+! *color7: #6C7A80
+! *color15: #C5C8C6
 
-! URxvt.internalBorder:      0
-! URxvt.externalBorder:      0
-
-! URxvt.scrollBar:           false
-
-! URxvt*fading:              30
-
-! URxvt.url-launcher:        /usr/bin/google-chrome-stable
-
-! do not scroll with output
-! URxvt*scrollTtyOutput: false
-
-! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-! URxvt*scrollWithBuffer: true
-
-! scroll back to the bottom on keypress
-! URxvt*scrollTtyKeypress: true
-
-! URxvt.perl-ext-common: default,matcher,resize-font
-! URxvt.matcher.button: 1
-! URxvt.matcher.rend.0: Uline Bold fg5
-! URxvt.colorUL: #4682B4
-! URxvt.resize-font.smaller: C-Down
-! URxvt.resize-font.bigger:  C-Up
+! Darker (Gotham) Colors
+*background: #101218
+*foreground: #d1d4e0
+! black
+*color0: #101218
+*color8: #7780a1
+! red
+*color1: #ee829f
+*color9: #ee829f
+! green
+*color2: #a5ffe1
+*color10: #a5ffe1
+! yellow
+*color3: #ffefcc
+*color11: #ffefcc
+! blue
+*color4: #97bbf7
+*color12: #97bbf7
+! magenta
+*color5: #c0b7f9
+*color13: #c0b7f9
+! cyan
+*color6: #97e0ff
+*color14: #97e0ff
+! white
+*color7: #d1d4e0
+*color15: #ffffff
