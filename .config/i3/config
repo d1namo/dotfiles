@@ -127,6 +127,7 @@ assign [class="google-chrome"] $workspace2
 assign [class="Pcmanfm"] $workspace3
 assign [class="Gthumb"] $workspace4
 assign [class="Gimp-2.8"] $workspace5
+assign [class="VBoxSDL"] $workspace6
 assign [class="VirtualBox"] $workspace6
 
 # reload the configuration file
@@ -156,6 +157,7 @@ bindsym $mod+r mode "resize"
 # Floating
   for_window [class="Lxappearance"] floating enable
   for_window [class="Pavucontrol"] floating enable
+  for_window [class="VBoxSDL"] floating enable
   for_window [class="VirtualBox"] floating enable
   for_window [class="smplayer"] floating enable
   for_window [class="Viewnior"] floating enable
