@@ -1,7 +1,14 @@
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
 Xcursor.theme: DMZ-White
 !XTerm*locale: true
 !XTerm*utf8: 1
-xterm*faceName: Ubuntu Mono:size
+xterm*faceName: Ubuntu Mono
 xterm*faceSize: 11
 xterm*loginshell: true
 xterm*savelines: 2000
@@ -10,6 +17,8 @@ xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 xterm*scrollTtyOutput: false
 xterm*termName: xterm-256color
 XTerm*ScrollKey: true
+xterm*metaSendsEscape: true
+XTerm*eightBitInput: False
 
 
 ! URxvt.font:                xft:UbuntuMono:style=Regular:size=12
