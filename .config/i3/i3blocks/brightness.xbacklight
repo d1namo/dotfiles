@@ -1,24 +1,23 @@
-
 #
 # dependencies:
-# - light-git
+# - xbacklight
 #
 # @return {Number}: Current brightness
 ################################
 
 case $BLOCK_BUTTON in
 	# right click
-	# set to 100%
-	3) light -S 100 ;;
+	# set to `20
+	3) xbacklight -set 20 ;;
 
 	# scroll up
 	# raise brightness
-	4) light -A 10 ;;
+	4) xbacklight -inc 10 ;;
 
 	# scroll down
 	# lower brightness
-	5) light -U 10 ;;
+	5) xbacklight -dec 10 ;;
 esac
 
-printf "%.0f" "$(light -G)"
+printf "%.0f" "$(xbacklight -get)"
 
