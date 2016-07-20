@@ -8,7 +8,6 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit promptinit
 compinit
 promptinit
-
 setopt HIST_IGNORE_DUPS
 setopt autocd
 #setopt correctall
