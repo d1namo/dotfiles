@@ -39,7 +39,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec --no-startup-id termite
-bindsym $mod+Return exec --no-startup-id uxterm
+bindsym $mod+Return exec --no-startup-id xterm
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -215,12 +215,12 @@ bindsym $mod+F6 exec --no-startup-id light -U 10 # decrease screen brightness
 
 # exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
-exec --no-startup-id uxterm -title t1
-exec --no-startup-id uxterm -title t2
-exec --no-startup-id uxterm -title t3
-exec --no-startup-id uxterm -title t4
-exec --no-startup-id uxterm -title t5
-exec --no-startup-id uxterm -title t6
+exec --no-startup-id xterm -title t1
+exec --no-startup-id xterm -title t2
+exec --no-startup-id xterm -title t3
+exec --no-startup-id xterm -title t4
+exec --no-startup-id xterm -title t5
+exec --no-startup-id xterm -title t6
 exec google-chrome-stable
 exec --no-startup-id pcmanfm
 exec --no-startup-id pcmanfm

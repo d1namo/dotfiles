@@ -5,8 +5,8 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 Xcursor.theme: DMZ-White
-!XTerm*locale: true
-!XTerm*utf8: 1
+XTerm*locale: true
+XTerm*utf8: 1
 xterm*faceName: Ubuntu Mono
 xterm*faceSize: 11
 xterm*loginshell: true
@@ -18,6 +18,10 @@ xterm*termName: xterm-256color
 XTerm*ScrollKey: true
 xterm*metaSendsEscape: true
 XTerm*eightBitInput: False
+
+XTerm*VT100.Translations: #override \n\
+    Shift<Key>Up: scroll-back(1) \n\
+    Shift<Key>Down: scroll-forw(1)
 
 ! Darker bg, brighter contract colorscheme
 *background: #101218
