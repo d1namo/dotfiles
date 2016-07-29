@@ -213,7 +213,7 @@ bindsym $mod+F6 exec --no-startup-id light -U 10 # decrease screen brightness
 # Touchpad controls
 #bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
-# exec --no-startup-id compton -b
+#exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
 exec --no-startup-id xterm -title t1
 exec --no-startup-id xterm -title t2
