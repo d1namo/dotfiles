@@ -28,7 +28,7 @@
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-                        "transient_for": "^$",
+                        //"transient_for": "^$",
                         "title": "^t1$"
                        }
                     ],
@@ -50,7 +50,7 @@
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-                        "transient_for": "^$",
+                        //"transient_for": "^$",
                         "title": "^t2$"
                        }
                     ],
@@ -88,7 +88,7 @@
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-                                "transient_for": "^$",
+                                //"transient_for": "^$",
                                 "title": "^t3$"
                                }
                             ],
@@ -110,7 +110,7 @@
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-                                "transient_for": "^$",
+                                //"transient_for": "^$",
                                 "title": "^t5$"
                                }
                             ],
@@ -141,7 +141,7 @@
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-                                "transient_for": "^$",
+                                //"transient_for": "^$",
                                 "title": "^t4$"
                                }
                             ],
@@ -163,7 +163,7 @@
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-                                "transient_for": "^$",
+                                //"transient_for": "^$",
                                 "title": "^t6$"
                                }
                             ],
