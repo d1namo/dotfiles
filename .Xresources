@@ -20,8 +20,8 @@ xterm*metaSendsEscape: true
 XTerm*eightBitInput: False
 
 XTerm*VT100.Translations: #override \n\
-    Shift<Key>Up: scroll-back(1) \n\
-    Shift<Key>Down: scroll-forw(1)
+	Shift<Key>Up: scroll-back(1) \n\
+	Shift<Key>Down: scroll-forw(1)
 
 ! Darker bg, brighter contract colorscheme
 *background: #101218

@@ -14,8 +14,8 @@ set $mod Mod4
 #i3-gaps config
 for_window [class="^.*"] border pixel 1
 hide_edge_borders both
-gaps inner 10
-gaps outer 5
+gaps inner 15
+gaps outer 0
 new_window pixel 1
 new_float pixel 1
 
@@ -213,7 +213,6 @@ bindsym $mod+F6 exec --no-startup-id light -U 10 # decrease screen brightness
 # Touchpad controls
 #bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
-#exec --no-startup-id compton -b
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
 exec --no-startup-id xterm -title t1
 exec --no-startup-id xterm -title t2
@@ -221,6 +220,7 @@ exec --no-startup-id xterm -title t3
 exec --no-startup-id xterm -title t4
 exec --no-startup-id xterm -title t5
 exec --no-startup-id xterm -title t6
-exec google-chrome-stable
+exec --no-startup-id google-chrome-stable
 exec --no-startup-id pcmanfm
 exec --no-startup-id pcmanfm
+exec --no-startup-id "sh -c 'sleep 6; exec compton -b'"
