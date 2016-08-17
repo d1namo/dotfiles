@@ -50,4 +50,4 @@ rm $tempout
 
 # Count how many domains/whitelists were added so it can be displayed to the user
 numberOfAdsBlocked=$(cat $finaloutlist | wc -l | sed 's/^[ \t]*//')
-echo "$numberOfAdsBlocked ad domains bilocked."
+echo "$numberOfAdsBlocked ad domains blocked."
