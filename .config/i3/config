@@ -47,7 +47,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 
 #rofi
-bindsym $mod+d exec rofi -show run -font "Ubuntu 24" -lines 3 -eh 2
+bindsym $mod+d exec rofi -show run -font "Ubuntu 32" -lines 3 -eh 2
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -98,6 +98,8 @@ set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
+set $workspace6 "7: "
+set $workspace6 "8: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1 
@@ -127,7 +129,6 @@ assign [class="google-chrome"] $workspace2
 assign [class="Pcmanfm"] $workspace3
 assign [class="Gthumb"] $workspace4
 assign [class="Gimp-2.8"] $workspace5
-assign [class="VBoxSDL"] $workspace6
 assign [class="VirtualBox"] $workspace6
 
 # reload the configuration file
@@ -157,11 +158,9 @@ bindsym $mod+r mode "resize"
 # Floating
   for_window [class="Lxappearance"] floating enable
   for_window [class="Pavucontrol"] floating enable
-  for_window [class="VBoxSDL"] floating enable
   for_window [class="VirtualBox"] floating enable
   for_window [class="smplayer"] floating enable
   for_window [class="Viewnior"] floating enable
-
 
 # Colors
 set $bg-color			#2f343f
@@ -183,7 +182,6 @@ client.urgent			$urgent-bg-color	$urgent-bg-color		$text-color
 bar {
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
-#	font pango:Ubuntu 11
 	colors {
 		background $bg-color
 		separator #757575
@@ -199,7 +197,6 @@ bar {
 bindsym $mod+l exec --no-startup-id i3lock --color "$bg-color"
 
 # Pulse Audio controls
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym $mod+F10 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym $mod+F9 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym $mod+F8 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
@@ -211,7 +208,7 @@ bindsym $mod+F7 exec --no-startup-id light -A 10 # increase screen brightness
 bindsym $mod+F6 exec --no-startup-id light -U 10 # decrease screen brightness
 
 # Touchpad controls
-#bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
+bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
 exec --no-startup-id xterm -title t1
