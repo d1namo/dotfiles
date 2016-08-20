@@ -50,9 +50,9 @@ fi
 
 xset r rate 200 70 &
 xset dpms 0 0 660 &
-xinput disable 12 &
 exec sh ~/.fehbg &
 # xautolock -time 11 -locker "i3lock --color 2f343f" &
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_git_rsa
+xinput disable 12
 exec i3
