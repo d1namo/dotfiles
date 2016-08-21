@@ -7,8 +7,8 @@ Xft.rgba: rgb
 Xcursor.theme: DMZ-White
 XTerm*locale: true
 XTerm*utf8: 1
-xterm*faceName: Ubuntu Mono
-xterm*faceSize: 11
+XTerm*faceName: Ubuntu Mono
+XTerm*faceSize: 11
 xterm*loginshell: true
 xterm*savelines: 2000
 ! double-click to select whole URLs :D
@@ -23,7 +23,7 @@ XTerm*VT100.Translations: #override \n\
 	Shift<Key>Up: scroll-back(1) \n\
 	Shift<Key>Down: scroll-forw(1)
 
-! Darker bg, brighter contract colorscheme
+! Darker bg, brighter contrast colorscheme
 *background: #101218
 *foreground: #d1d4e0
 ! black
