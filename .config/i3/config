@@ -95,11 +95,11 @@ bindsym $mod+a focus parent
 set $workspace1 "1: "
 set $workspace2 "2: "
 set $workspace3 "3: "
-set $workspace4 "4: "
+set $workspace4 "4: "
 set $workspace5 "5: "
-set $workspace6 "6: "
-set $workspace6 "7: "
-set $workspace6 "8: "
+set $workspace6 "6: "
+set $workspace7 "7: "
+set $workspace8 "8: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1 
@@ -127,9 +127,9 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 assign [class="google-chrome"] $workspace2
 assign [class="Pcmanfm"] $workspace3
-assign [class="Gthumb"] $workspace4
+assign [class="Gthumb"] $workspace6
 assign [class="Gimp-2.8"] $workspace5
-assign [class="VirtualBox"] $workspace6
+assign [class="VirtualBox"] $workspace7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -221,3 +221,4 @@ exec --no-startup-id google-chrome-stable
 exec --no-startup-id pcmanfm
 exec --no-startup-id pcmanfm
 exec --no-startup-id "sh -c 'sleep 6; exec compton -b'"
+exec --no-startup-id xss-lock -- i3lock -n --color 2f343f
