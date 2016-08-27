@@ -23,7 +23,7 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.65,
+                    "percent": 0.5,
                     "swallows": [
                        {
                         "class": "^XTerm$",
@@ -45,7 +45,7 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.35,
+                    "percent": 0.5,
                     "swallows": [
                        {
                         "class": "^XTerm$",
