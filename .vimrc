@@ -4,3 +4,4 @@ syntax on
 set ignorecase
 " set number
 set encoding=utf8
+set mouse=a
