@@ -7,6 +7,7 @@ Xft.rgba: rgb
 Xcursor.theme: DMZ-White
 XTerm*locale: true
 XTerm*utf8: 1
+XTerm*renderFont: true
 XTerm*faceName: Ubuntu Mono
 XTerm*faceSize: 11
 xterm*loginshell: true

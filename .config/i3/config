@@ -98,8 +98,9 @@ set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: "
 set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
+set $workspace7 "7: "
+set $workspace8 "8: "
+set $workspace9 "9: "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1 
@@ -111,7 +112,6 @@ bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace $workspace7
 bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
-bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1 
@@ -123,7 +123,6 @@ bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace $workspace7
 bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
 
 assign [class="google-chrome"] $workspace2
 assign [class="Pcmanfm"] $workspace3
@@ -137,7 +136,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec i3-msg exit
+bindsym $mod+Shift+e exec killall xss-lock ; exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -158,7 +157,7 @@ bindsym $mod+r mode "resize"
 # Floating
   for_window [class="Lxappearance"] floating enable
   for_window [class="Pavucontrol"] floating enable
-  for_window [class="VirtualBox"] floating enable
+#  for_window [class="VirtualBox"] floating enable
   for_window [class="smplayer"] floating enable
   for_window [class="Viewnior"] floating enable
 
