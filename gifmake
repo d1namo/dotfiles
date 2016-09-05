@@ -4,10 +4,13 @@ filters="fps=10,scale=$3:-1:flags=lanczos"
 
 if [ "$#" == "0" ]; then
 	echo "Usage: `basename $0` [source dest compression] {start[hh:mm:ss] duration[ss]}"
-	echo "Eg: `basename $0` cat.mp4 cat.gif 400 80"
 	echo ""
-	echo "Eg: with hh:mm:ss `basename $0` cat.mp4 cat.gif 400 80 00:22:45 30"
-	echo "^Starts at position 22m45s for 30s"
+	echo "Eg: `basename $0` cat.mp4 cat.gif 400 80"
+	echo "creates cat.gif at 400 pixels using level 80 compression"
+	echo ""
+	echo "Eg: `basename $0` cat.mp4 cat.gif 400 80 00:22:45 30"
+	echo "creates cat.gif from cat.mp4, starting at 22m45s for 30s"
+	echo "compression levels (30 is very light compression, 200 is heavy)"
   exit 0
 fi
 
