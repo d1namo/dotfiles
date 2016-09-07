@@ -1,3 +1,0 @@
-keysym Control_R = Mode_switch
-keysym BackSpace = BackSpace NoSymbol Delete
-keysym Alt_L = Alt_L Meta_L Caps_Lock Meta_L

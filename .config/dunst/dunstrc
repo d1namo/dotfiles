@@ -1,7 +1,0 @@
-[global]
-    font = Ubuntu 11
-
-[urgency_normal]
-    background = "#5294e2"
-    foreground = "#f3f4f5"
-    timeout = 1
