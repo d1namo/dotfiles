@@ -56,4 +56,5 @@ eval `ssh-agent -s`
 ssh-add ~/.ssh/id_git_rsa
 ssh-add ~/.ssh/id_aur
 xinput disable 12
+mount mini
 exec i3

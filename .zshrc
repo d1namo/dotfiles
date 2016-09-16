@@ -3,9 +3,9 @@ HISTSIZE=500
 SAVEHIST=500
 bindkey -v
 
+autoload -Uz compinit promptinit
 zstyle :compinstall filename '~/.zshrc'
 
-autoload -Uz compinit promptinit
 compinit
 promptinit
 setopt HIST_IGNORE_DUPS
