@@ -10,6 +10,7 @@ compinit
 promptinit
 setopt HIST_IGNORE_DUPS
 setopt autocd
+setopt COMPLETE_ALIASES
 #setopt correctall
 
 # some ls aliases
