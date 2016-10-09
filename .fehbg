@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-scale '/usr/share/archlinux/wallpaper/arch-linux-wallpaper.png' 
+feh  --bg-scale '/usr/share/archlinux/wallpaper/arch-wallpaper.png' 
