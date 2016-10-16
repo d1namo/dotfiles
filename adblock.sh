@@ -30,8 +30,8 @@ curl -s http://adblock.gjtech.net/?format=unix-hosts | grep -v "#" | sed '/^$/d'
 echo "Getting someone who cares ad list..." 
 curl -s http://someonewhocares.org/hosts/hosts | grep -v "#" | sed '/^$/d' | sed 's/\ /\\ /g' | grep -v '^\\' | grep -v '\\$' | awk '{print $2}' | grep -v '^\\' | grep -v '\\$' | sort >> $tempoutlist
 
-echo "Getting Mother of All Ad Blocks list..." 
-curl -A 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0' -e http://forum.xda-developers.com/ http://adblock.mahakala.is/ | grep -v "#" | awk '{print $2}' | sort >> $tempoutlist
+#echo "Getting Mother of All Ad Blocks list..." 
+#curl -A 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0' -e http://forum.xda-developers.com/ http://adblock.mahakala.is/ | grep -v "#" | awk '{print $2}' | sort >> $tempoutlist
 
 echo "Removing duplicates, processing whitelist/blacklist, and formatting the list..."
 sleep 1
@@ -51,3 +51,5 @@ rm $tempout
 # Count how many domains/whitelists were added so it can be displayed to the user
 numberOfAdsBlocked=$(cat $finaloutlist | wc -l | sed 's/^[ \t]*//')
 echo "$numberOfAdsBlocked ad domains blocked."
+
+sudo systemctl restart dnsmasq
