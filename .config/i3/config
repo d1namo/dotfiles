@@ -213,7 +213,7 @@ bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace_1.json'"
 exec --no-startup-id xterm -title t1 -e 'journalctl -f'
 exec --no-startup-id xterm -title t2 -e 'sleep 5; ssh dean@mini -t journalctl -f; $SHELL'
-exec --no-startup-id xterm -title t3
+exec --no-startup-id xterm -title t3 -e 'ranger; $SHELL'
 exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
 exec --no-startup-id xterm -title t5
 exec --no-startup-id xterm -title t6
