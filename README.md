@@ -6,7 +6,6 @@ My setup is Archlinux with i3.  I have a remastered arch iso setup this way avai
 https://drive.google.com/drive/folders/0B_M5BSg_FZkxV2RzWVlnR3M1a0U?usp=sharing
 
 ![prompt](scrot.png)
-![prompt](arch.gif)
 
 Also included so I don't have to make seperate repo's:
 
