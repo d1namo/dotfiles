@@ -37,4 +37,5 @@ fi
 	filesize="`du -h "$2" | cut -f 1`"
 	echo "$2" image size is $imagesize and file size is $filesize""
 
+
 exit 0
