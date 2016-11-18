@@ -1,10 +1,10 @@
-## _Simple snapshot of my dotfiles_
+### Screenshot of my main terminal workspace layout in i3wm.
+![prompt](scrot.png)
+
 
 My setup is Archlinux with i3.  I have a remastered arch iso setup this way available at
 https://drive.google.com/drive/folders/0B_M5BSg_FZkxV2RzWVlnR3M1a0U?usp=sharing
 
-### Screenshot of my main terminal workspace layout.
-![prompt](scrot.png)
 
 
 
