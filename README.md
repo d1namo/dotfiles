@@ -9,9 +9,6 @@ Screenshot of my main terminal workspace layout.
 ![prompt](scrot.png)
 
 
-Gif of my iso being installed (24mb!)
-![prompt](arch.gif)
-
 
 Also included so I don't have to make seperate repo's:
 
