@@ -11,7 +11,8 @@ Screenshot of my main terminal workspace layout.
 
 Gif of my iso being installed (24mb!)
 ![prompt](arch.gif)
-=======
+
+
 Also included so I don't have to make seperate repo's:
 
 adblock.sh -  script that pulls hosts files from multiple url's and strips/sorts for usage with something like dnsmasq/pihole.
