@@ -1,6 +1,6 @@
 # :wrench: .files
 
-_Simple snapshot of my dotfiles_
+## _Simple snapshot of my dotfiles_
 
 My setup is Archlinux with i3.  I have a remastered arch iso setup this way available at
 https://drive.google.com/drive/folders/0B_M5BSg_FZkxV2RzWVlnR3M1a0U?usp=sharing
