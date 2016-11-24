@@ -219,6 +219,6 @@ exec --no-startup-id xterm -title t5
 exec --no-startup-id xterm -title t6
 exec --no-startup-id google-chrome-stable
 exec --no-startup-id "i3-msg workspace number '4: '; exec xterm -e 'sleep 3; ssh dean@mini -t screen -D -R'"
-exec --no-startup-id "sh -c 'sleep 6; exec compton -b'"
+exec --no-startup-id "sh -c 'sleep 4; exec compton -b'"
 exec --no-startup-id xss-lock -- i3lock -n --color 2f343f
 exec --no-startup-id "sh -c 'sleep 6; exec i3-msg workspace prev'; exec sh -c 'sleep 3; exec i3-msg workspace prev'"
