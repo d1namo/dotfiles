@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$#" == "0" ]; then
+        echo "Usage: `basename $0` source destination fontsize toptext bottomtext"
+        echo "Eg: `basename $0` file.jpg yourmeme.jpg 64 "\""topstuff here"\"" "\""bottom stuff here"\"""
+	echo "Eg: `basename $0` file.jpg yourmeme.jpg 64 "\"""\"" "\""bottom stuff here"\"" (has no top text)"
+  exit 0
+fi
+
+convert $1 -gravity north -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$4" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$4" -gravity south -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$5" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$5" $2
+
