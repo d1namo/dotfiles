@@ -1,4 +1,5 @@
 #!/bin/sh
+## Grab the impact.ttf font from https://github.com/duffydack/dotfiles/blob/master/impact.ttf
 
 if [ "$#" == "0" ]; then
         echo "Usage: `basename $0` source destination fontsize toptext bottomtext"
