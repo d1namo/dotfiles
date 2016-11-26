@@ -1,5 +1,4 @@
 #!/bin/sh
-## Grab the impact.ttf font from https://github.com/duffydack/dotfiles/blob/master/impact.ttf
 
 if [ "$#" == "0" ]; then
         echo "Usage: `basename $0` source destination fontsize toptext bottomtext"
@@ -8,5 +7,13 @@ if [ "$#" == "0" ]; then
   exit 0
 fi
 
-convert $1 -gravity north -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$4" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$4" -gravity south -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$5" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$5" $2
+{
+if command -v convert &>/dev/null; then
+	convert $1 -gravity north -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$4" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$4" -gravity south -stroke '#000C' -strokewidth 5 -font impact -pointsize $3 -annotate 0 "$5" -stroke none -fill white -font impact -pointsize $3 -annotate 0 "$5" $2
+  exit 1
+else
+	echo 'Please Install Imagemagick FIRST!' >&2
+  exit 0
+fi
+}
 
