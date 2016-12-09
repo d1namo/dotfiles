@@ -1,5 +1,5 @@
 ### Screenshot of my main terminal workspace layout in i3wm.
-![prompt](scrot.png)
+![prompt](scrot2.png)
 
 
 My setup is Archlinux with i3.  I have a remastered arch iso setup this way available at
