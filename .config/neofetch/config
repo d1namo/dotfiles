@@ -32,7 +32,7 @@ printinfo () {
     info "GPU" gpu
     info "Memory" memory
     info "Disk" disk
-    info "Song" song
+#    info "Song" song
     prin "Product" "Toshiba Chromebook 2"
     # info "CPU Usage" cpu_usage
     # info "Battery" battery
@@ -323,11 +323,11 @@ crop_offset="center"
 # Image size
 # The image is half the terminal width by default.
 # --size auto, 00px, 00%, none
-image_size="268px"
+image_size="240px"
 
 # Right gap between image and text
 # --gap num
-gap=2
+gap=1
 
 # Image offsets
 # --xoffset px
