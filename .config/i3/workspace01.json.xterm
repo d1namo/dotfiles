@@ -9,7 +9,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splith",
-            "percent": 0.15,
+            "percent": 0.167894736842105,
             "type": "con",
             "nodes": [
                 {
@@ -23,13 +23,57 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.5,
+                    "percent": 0.283333333333334,
                     "swallows": [
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-                        //"transient_for": "^$",
+			//"transient_for": "^$",
                         "title": "^t1$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 316,
+                       "width": 564,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "dean@picard: ~",
+                    "percent": 0.216666666666667,
+                    "swallows": [
+                       {
+                        "class": "^XTerm$",
+                        "instance": "^xterm$",
+			//"transient_for": "^$",
+                        "title": "^t7$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 316,
+                       "width": 564,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "dean@picard: ~",
+                    "percent": 0.216666666666667,
+                    "swallows": [
+                       {
+                        "class": "^XTerm$",
+                        "instance": "^xterm$",
+			//"transient_for": "^$",
+                        "title": "^t8$"
                        }
                     ],
                     "type": "con"
@@ -45,12 +89,12 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.5,
+                    "percent": 0.283333333333334,
                     "swallows": [
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-                        //"transient_for": "^$",
+			//"transient_for": "^$",
                         "title": "^t2$"
                        }
                     ],
@@ -62,7 +106,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splith",
-            "percent": 0.8,
+            "percent": 0.832105263157895,
             "type": "con",
             "nodes": [
                 {
@@ -88,7 +132,7 @@
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-                                //"transient_for": "^$",
+				//"transient_for": "^$",
                                 "title": "^t3$"
                                }
                             ],
@@ -111,7 +155,7 @@
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
                                 //"transient_for": "^$",
-                                "title": "^t5$"
+				"title": "^t6$"
                                }
                             ],
                             "type": "con"
@@ -142,7 +186,7 @@
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
                                 //"transient_for": "^$",
-                                "title": "^t4$"
+				"title": "^t4$"
                                }
                             ],
                             "type": "con"
@@ -164,7 +208,7 @@
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
                                 //"transient_for": "^$",
-                                "title": "^t6$"
+				"title": "^t5$"
                                }
                             ],
                             "type": "con"

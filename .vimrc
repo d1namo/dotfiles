@@ -1,4 +1,4 @@
-colo pablo
+colorscheme pablo
 syntax on
 " set hlsearch
 set ignorecase
