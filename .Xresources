@@ -9,10 +9,10 @@ Xcursor.theme: DMZ-White
 XTerm*locale: true
 XTerm*utf8: 1
 XTerm*renderFont: true
-XTerm*faceName: Ubuntu Mono
-XTerm*faceSize: 11
+XTerm*faceName: Noto Mono
+XTerm*faceSize: 10
 xterm*loginshell: true
-xterm*savelines: 3000
+xterm*savelines: 1000
 ! double-click to select whole URLs :D
 xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 xterm*scrollTtyOutput: false
@@ -20,7 +20,6 @@ xterm*termName: xterm-256color
 XTerm*ScrollKey: true
 xterm*metaSendsEscape: true
 XTerm*eightBitInput: False
-xterm*selectToClipboard: true
 
 XTerm*VT100.Translations: #override \n\
 	Shift<Key>Up: scroll-back(1) \n\

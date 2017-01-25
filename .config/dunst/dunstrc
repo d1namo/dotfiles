@@ -1,5 +1,5 @@
 [global]
-    font = Ubuntu 12
+    font = Noto Sans 12
 
 [urgency_normal]
     background = "#5294e2"
