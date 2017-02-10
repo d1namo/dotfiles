@@ -13,14 +13,12 @@ print_info() {
     info title
     info underline
 
-    info "OS" distro
-    info "Model" model
+#    info "OS" distro
+    prin "$(color 4)Model" "Toshiba Chromebook 2"
     info "Kernel" kernel
     info "Uptime" uptime
-    info "Packages" packages
     info "Shell" shell
     info "Resolution" resolution
-    info "DE" de
     info "WM" wm
     info "WM Theme" wm_theme
     info "Theme" theme
@@ -30,11 +28,9 @@ print_info() {
     info "CPU" cpu
     info "GPU" gpu
     info "Memory" memory
-
+    info "Disk" disk
     # info "CPU Usage" cpu_usage
-    # info "Disk" disk
     # info "Battery" battery
-    # info "Font" font
     # info "Song" song
     # info "Local IP" local_ip
     # info "Public IP" public_ip
@@ -442,7 +438,7 @@ block_range=(0 7)
 # Default:  'on'
 # Values:   'on', 'off'
 # Flag:     --color_blocks
-color_blocks="on"
+color_blocks="off"
 
 # Color block width in spaces
 #
@@ -531,7 +527,7 @@ disk_display="off"
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'tycat', 'w3m'
 # Flag:     --backend
-image_backend="ascii"
+image_backend="w3m"
 
 # Image Source
 #
@@ -544,7 +540,7 @@ image_backend="ascii"
 # NOTE: 'auto' will pick the best image source for whatever image backend is used.
 #       In ascii mode, distro ascii art will be used and in an image mode, your
 #       wallpaper will be used.
-image_source="auto"
+image_source="wallpaper"
 
 
 # Ascii Options
@@ -620,14 +616,14 @@ crop_offset="center"
 # Values:  'auto', '00px', '00%', 'none'
 # Flags:   --image_size
 #          --size
-image_size="auto"
+image_size="225px"
 
 # Ggap between image and text
 #
 # Default: '3'
 # Values:  'num', '-num'
 # Flag:    --gap
-gap=3
+gap=1
 
 # Image offsets
 # Only works with the w3m backend.

@@ -46,7 +46,7 @@ bindsym $mod+Return exec --no-startup-id xterm
 bindsym $mod+Shift+q kill
 
 #rofi
-bindsym $mod+d exec rofi -show run -font "Noto Sans 32" -lines 3 -eh 2
+bindsym $mod+d exec rofi -show run -font "Noto Sans 32" -lines 5 -eh 1 -line-margin 15 -click-to-exit
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -213,14 +213,14 @@ exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace01.js
 exec --no-startup-id xterm -fs 8 -title t1 -e 'journalctl -f'
 exec --no-startup-id xterm -fs 8 -title t2 -e 'sleep 5; ssh dean@mini -t journalctl -f; $SHELL'
 exec --no-startup-id xterm -fs 8 -title t7 -e 'htop; $SHELL'
-exec --no-startup-id xterm -fs 8 -title t8 -e 'sleep 5; ssh dean@mini -t nbwmon; $SHELL'
+exec --no-startup-id xterm -fs 8 -title t8 -e 'sleep 7; ssh dean@mini -t htop; $SHELL'
 exec --no-startup-id xterm -title t3 -e 'ranger; $SHELL'
 exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
 exec --no-startup-id xterm -title t5
 exec --no-startup-id xterm -title t6
 exec --no-startup-id google-chrome-stable
-exec --no-startup-id "i3-msg workspace number '4: '; exec termite -e 'ssh dean@mini -t screen -U -D -R; $SHELL'"
+exec --no-startup-id "i3-msg workspace number '4: '; exec termite -e 'ssh dean@mini -t screen -U -D -R'"
 #exec --no-startup-id "i3-msg workspace number '4: '; exec xterm -e 'sleep 3; ssh dean@mini -t screen -D -R'"
 #exec --no-startup-id "sh -c 'sleep 4; exec compton -b'"
 exec --no-startup-id xss-lock -- i3lock -n --color 2f343f
-exec --no-startup-id "sh -c 'sleep 7; exec i3-msg workspace prev'; exec sh -c 'sleep 3; exec i3-msg workspace prev'"
+exec --no-startup-id "sh -c 'sleep 8; exec i3-msg workspace prev'; exec sh -c 'sleep 3; exec i3-msg workspace prev'"
