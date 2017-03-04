@@ -54,5 +54,6 @@ exec sh ~/.fehbg &
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_git_rsa
 ssh-add ~/.ssh/id_aur
+ssh-add ~/.ssh/id_rsa
 xinput disable 12
 exec i3
