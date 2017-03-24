@@ -50,7 +50,7 @@ fi
 
 xset r rate 200 70 &
 xset dpms 0 0 960 &
-exec sh ~/.fehbg &
+# exec sh ~/.fehbg &
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_git_rsa
 ssh-add ~/.ssh/id_aur
