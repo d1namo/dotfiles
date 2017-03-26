@@ -7,20 +7,13 @@ syntax on
 set hlsearch
 set ignorecase
 set encoding=utf8
-set cursorline
 set noshowmode
 set laststatus=2
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"x":""}',
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '|', 'right': '|' }
-      \ }
+" Show full path in airline status
+let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
