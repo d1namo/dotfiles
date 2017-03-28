@@ -9,6 +9,7 @@ bindkey -v
 autoload -Uz compinit promptinit
 compinit
 promptinit
+_comp_options+=(globdots)
 zstyle :compinstall filename '~/.zshrc'
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 setopt HIST_IGNORE_DUPS
