@@ -1,0 +1,28 @@
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/sdcard/music
+allow_for_physical_item_deletion = yes
+
+# song format
+song_list_format = "{$3%n │ $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6 │ %b$9}{$3 │ %l$9}"
+
+# various settings
+autocenter_mode = "yes"
+progressbar_look = "─╼·"
+user_interface = "alternative"
+
+# color definitions
+main_window_color = "blue"
+main_window_highlight_color = "blue"
+alternative_ui_separator_color = "black"
+progressbar_color = "cyan"
+active_column_color = "green"
+active_window_border = "blue"
+
+
+alternative_header_first_line_format ="$b$5««{ %a -} {%t} »»$9$/b"
+alternative_header_second_line_format ="$b$5 {%b}|{%f} {[%y]}$9$/b"
+song_columns_list_format = "(40)[blue]{a|f} (40)[green]{tE} (20)[blue]{bE}"
+
+playlist_disable_highlight_delay = "2"
+
