@@ -14,7 +14,7 @@ user_interface = "alternative"
 # color definitions
 main_window_color = "blue"
 main_window_highlight_color = "blue"
-alternative_ui_separator_color = "black"
+alternative_ui_separator_color = "blue"
 progressbar_color = "cyan"
 active_column_color = "green"
 active_window_border = "blue"
