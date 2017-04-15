@@ -1,1 +1,0 @@
-../plugged/nord-vim/colors/nord.vim

@@ -3,11 +3,12 @@ scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
 mouse_autohide = true
-allow_bold = true
+#allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Noto Mono 10
+font = Fira Code Medium 10
+#font = Noto Mono 10
 scrollback_lines = 500
 search_wrap = true
 cursor_blink = system
@@ -58,16 +59,5 @@ color15 = #ECEFF4
 #color13 = #C0B7F9
 #color14 = #97E0FF
 #color15 = #FFFFFF
-
-#[hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
 
 # vim: ft=dosini cms=#%s

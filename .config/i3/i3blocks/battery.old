@@ -37,26 +37,10 @@ $status = $1;
 $percent = $2;
 $full_text = "$percent%";
 
-if ($status ne 'Discharging' and $status ne 'Charging') {
-    print ' '; 
-}
-
 if ($status eq 'Discharging') {
-
-if ($percent < 10) {
-    print ' ';
-} elsif ($percent < 25) {
-    print ' ';
-} elsif ($percent < 50) {
-    print ' ';
-} elsif ($percent < 75) {
-    print ' ';
-} elsif ($percent < 100) {
-    print ' ';
-}
-
+	$full_text .= ' DIS';
 } elsif ($status eq 'Charging') {
-    print ' ';
+	$full_text .= ' CHR';
 }
 
 $short_text = $full_text;
@@ -72,11 +56,13 @@ print "$short_text\n";
 # consider color and urgent flag only on discharge
 if ($status eq 'Discharging') {
 
-	if ($percent < 15) {
+	if ($percent < 20) {
 		print "#FF0000\n";
 	} elsif ($percent < 40) {
+		print "#FFAE00\n";
+	} elsif ($percent < 60) {
 		print "#FFF600\n";
-	} elsif ($percent < 80) {
+	} elsif ($percent < 85) {
 		print "#A8FF00\n";
 	}
 

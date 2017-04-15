@@ -11,6 +11,7 @@ set noshowmode
 set laststatus=2
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+cmap w!! w !sudo tee > /dev/null %
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'

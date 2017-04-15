@@ -12,8 +12,13 @@ Xcursor.theme: DMZ-White
 XTerm*locale: true
 XTerm*utf8: 1
 XTerm*renderFont: true
-XTerm*faceName: Noto Mono
+
+XTerm*faceName: Fira Code:style=Medium
 XTerm*faceSize: 10
+
+!XTerm*faceName: Noto Mono
+!XTerm*faceSize: 10
+
 xterm*loginshell: true
 xterm*savelines: 1000
 ! double-click to select whole URLs :D
