@@ -28,6 +28,7 @@ xterm*termName: xterm-256color
 XTerm*ScrollKey: true
 xterm*metaSendsEscape: true
 XTerm*eightBitInput: False
+xterm*bellIsUrgent: true
 
 XTerm*VT100.Translations: #override \n\
 	Shift<Key>Up: scroll-back(1) \n\
