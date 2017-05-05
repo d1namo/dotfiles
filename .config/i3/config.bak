@@ -198,4 +198,4 @@ exec --no-startup-id xterm -title t6
 exec --no-startup-id xss-lock -- i3lock -n --color 2f343f
 exec --no-startup-id chromium
 exec --no-startup-id "i3-msg workspace number '4:'; exec xterm -e 'ssh dean@mini -t screen -U -D -R'"
-exec --no-startup-id "sh -c 'sleep 5; exec i3-msg workspace prev'
+exec --no-startup-id "sh -c 'sleep 5; exec i3-msg workspace prev'; exec sh -c 'sleep 2; exec i3-msg workspace prev'"

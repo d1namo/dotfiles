@@ -13,22 +13,23 @@ print_info() {
     info title
     info underline
 
-#    info "OS" distro
+    # info "OS" distro
     prin "$(color 4)Model" "Toshiba Chromebook 2"
-    info "Kernel" kernel
-    info "Uptime" uptime
-    info "Shell" shell
-    info "Resolution" resolution
-    info "WM" wm
-    info "WM Theme" wm_theme
-    info "Theme" theme
-    info "Icons" icons
-    info "Terminal" term
-    info "Terminal Font" term_font
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Memory" memory
-    info "Disk" disk
+    info "$(color 4)Kernel" kernel
+    info "$(color 4)Uptime" uptime
+    info "$(color 4)Shell" shell
+    info "$(color 4)Resolution" resolution
+    info "$(color 4)WM" wm
+    info "$(color 4)WM Theme" wm_theme
+    info "$(color 4)Theme" theme
+    #info "Icons" icons
+    info "$(color 4)Terminal" term
+    #    info "Terminal Font" term_font
+    prin "$(color 4)Terminal Font" "Fira Code Medium"
+    info "$(color 4)CPU" cpu
+    info "$(color 4)GPU" gpu
+    info "$(color 4)Memory" memory
+    info "$(color 4)Disk" disk
     # info "CPU Usage" cpu_usage
     # info "Battery" battery
     # info "Song" song

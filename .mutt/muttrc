@@ -8,7 +8,7 @@ set postponed = +[Gmail]/Drafts
 unset imap_passive
 set mailcap_path 	= ~/.mutt/mailcap
 auto_view text/html
-alternative_order text/plain text/html
+#alternative_order text/plain text/html
 set imap_keepalive = 300
 set copy = no
 set record= "+Gmail/Sent\ Items"
@@ -48,3 +48,6 @@ set trash = +[Gmail]/Bin
 #macros
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
+# arch mailing lists: https://mailman.archlinux.org/mailman/listinfo/
+subscribe arch-dev-public@archlinux.org
+subscribe arch-devops@lists.archlinux.org
