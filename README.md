@@ -1,5 +1,5 @@
 ### Screenshot of my main terminal workspace layout in i3wm.
-![alt tag](https://raw.githubusercontent.com/duffydack/dotfiles/master/scrot2.png)
+![alt tag](https://raw.githubusercontent.com/duffydack/dotfiles/master/scrot.png)
 
 
 My setup is Archlinux with i3.  I have a remastered arch iso setup this way available at
