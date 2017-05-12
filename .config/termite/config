@@ -3,17 +3,17 @@ scroll_on_output = false
 scroll_on_keystroke = true
 audible_bell = false
 mouse_autohide = true
-#allow_bold = true
+allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Fira Code Medium 10
-#font = Noto Mono 10
+font = Fira Mono for Powerline Medium 10
 scrollback_lines = 500
 search_wrap = true
-cursor_blink = system
+cursor_blink = off
 cursor_shape = block
 filter_unmatched_urls = true
+browser = chromium
 
 [colors]
 # Nord theme

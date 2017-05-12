@@ -13,7 +13,7 @@
             "type": "con",
             "nodes": [
                 {
-                    "border": "normal",
+                    "border": "pixel",
                     "current_border_width": 2,
                     "floating": "auto_off",
                     "geometry": {
@@ -23,19 +23,18 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.283333333333334,
+                    "percent": 0.283333333333333,
                     "swallows": [
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-			//"transient_for": "^$",
                         "title": "^t1$"
                        }
                     ],
                     "type": "con"
                 },
                 {
-                    "border": "normal",
+                    "border": "pixel",
                     "current_border_width": 2,
                     "floating": "auto_off",
                     "geometry": {
@@ -50,14 +49,13 @@
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-			//"transient_for": "^$",
                         "title": "^t7$"
                        }
                     ],
                     "type": "con"
                 },
                 {
-                    "border": "normal",
+                    "border": "pixel",
                     "current_border_width": 2,
                     "floating": "auto_off",
                     "geometry": {
@@ -66,20 +64,19 @@
                        "x": 0,
                        "y": 0
                     },
-                    "name": "dean@picard: ~",
+                    "name": "dean@mini: ~",
                     "percent": 0.216666666666667,
                     "swallows": [
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-			//"transient_for": "^$",
                         "title": "^t8$"
                        }
                     ],
                     "type": "con"
                 },
                 {
-                    "border": "normal",
+                    "border": "pixel",
                     "current_border_width": 2,
                     "floating": "auto_off",
                     "geometry": {
@@ -89,12 +86,11 @@
                        "y": 0
                     },
                     "name": "dean@picard: ~",
-                    "percent": 0.283333333333334,
+                    "percent": 0.283333333333333,
                     "swallows": [
                        {
                         "class": "^XTerm$",
                         "instance": "^xterm$",
-			//"transient_for": "^$",
                         "title": "^t2$"
                        }
                     ],
@@ -117,7 +113,7 @@
                     "type": "con",
                     "nodes": [
                         {
-                            "border": "normal",
+                            "border": "pixel",
                             "current_border_width": 2,
                             "floating": "auto_off",
                             "geometry": {
@@ -127,19 +123,18 @@
                                "y": 0
                             },
                             "name": "dean@picard: ~",
-                            "percent": 0.5,
+                            "percent": 0.333333333333333,
                             "swallows": [
                                {
                                 "class": "^XTerm$",
                                 "instance": "^xterm$",
-				//"transient_for": "^$",
                                 "title": "^t3$"
                                }
                             ],
                             "type": "con"
                         },
                         {
-                            "border": "normal",
+                            "border": "pixel",
                             "current_border_width": 2,
                             "floating": "auto_off",
                             "geometry": {
@@ -149,13 +144,33 @@
                                "y": 0
                             },
                             "name": "dean@picard: ~",
-                            "percent": 0.5,
+                            "percent": 0.333333333333333,
                             "swallows": [
                                {
-                                "class": "^XTerm$",
+                                "class": "^Termite$",
+                                "instance": "^termite$",
+                                "title": "^t4$"
+                               }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "pixel",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 386,
+                               "width": 642,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "name": "dean@picard: ~",
+                            "percent": 0.333333333333333,
+                            "swallows": [
+                               {
+                                "class": "^Xterm$",
                                 "instance": "^xterm$",
-                                //"transient_for": "^$",
-				"title": "^t6$"
+                                "title": "^t6$"
                                }
                             ],
                             "type": "con"
@@ -170,7 +185,7 @@
                     "type": "con",
                     "nodes": [
                         {
-                            "border": "normal",
+                            "border": "pixel",
                             "current_border_width": 2,
                             "floating": "auto_off",
                             "geometry": {
@@ -183,20 +198,19 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^XTerm$",
-                                "instance": "^xterm$",
-                                //"transient_for": "^$",
-				"title": "^t4$"
+                                "class": "^Termite$",
+                                "instance": "^termite$",
+                                "title": "^t5$"
                                }
                             ],
                             "type": "con"
                         },
                         {
-                            "border": "normal",
+                            "border": "pixel",
                             "current_border_width": 2,
                             "floating": "auto_off",
                             "geometry": {
-                               "height": 386,
+                               "height": 362,
                                "width": 642,
                                "x": 0,
                                "y": 0
@@ -205,10 +219,9 @@
                             "percent": 0.5,
                             "swallows": [
                                {
-                                "class": "^XTerm$",
-                                "instance": "^xterm$",
-                                //"transient_for": "^$",
-				"title": "^t5$"
+                                "class": "^Termite$",
+                                "instance": "^termite$",
+                                "title": "^t9$"
                                }
                             ],
                             "type": "con"

@@ -1,5 +1,5 @@
 [global]
-  font = Fira Code Medium 10
+  font = Fira Mono for Powerline Medium 10
   format = "<b>%a:</b> %s\n%b"
   alignment = left
   word_wrap = yes

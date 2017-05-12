@@ -12,7 +12,7 @@ smart_borders on
 popup_during_fullscreen smart
 #for_window[class="."] focus
 
-font pango:Fira Code Medium 10
+font pango:Fira Mono for Powerline Medium 10
 floating_modifier $mod
 
 bindsym $mod+Return exec --no-startup-id xterm
@@ -20,7 +20,7 @@ bindsym $mod+Return exec --no-startup-id xterm
 bindsym $mod+Shift+q kill
 
 #rofi
-bindsym $mod+d exec rofi -show run -font "Fira Code Medium 36" -lines 5 -eh 1 -line-margin 15 -click-to-exit
+bindsym $mod+d exec rofi -show run -font "Fira Mono for Powerline Medium 36" -lines 5 -eh 1 -line-margin 15 -click-to-exit
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -186,16 +186,21 @@ bindsym $mod+F6 exec --no-startup-id xbacklight -dec 10 # decrease screen bright
 # Touchpad controls
 bindsym $mod+t exec /usr/local/bin/touchpad.sh # toggle touchpad
 
-exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace01.json'"
+#exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/workspace01.json'"
+exec --no-startup-id "i3-msg 'append_layout /home/dean/.config/i3/ws01.json'"
 exec --no-startup-id xterm -fs 7 -title t1 -e 'journalctl -f'
-exec --no-startup-id xterm -fs 7 -title t2 -e 'sleep 5; ssh dean@mini -t journalctl -f; $SHELL'
+exec --no-startup-id xterm -fs 7 -title t2 -e 'sleep 3; ssh dean@mini -t journalctl -f; $SHELL'
 exec --no-startup-id xterm -fs 7 -title t7 -e 'htop; $SHELL'
-exec --no-startup-id xterm -fs 7 -title t8 -e 'sleep 7; ssh dean@mini'
+exec --no-startup-id xterm -fs 7 -title t8 -e 'sleep 4; ssh dean@mini'
 exec --no-startup-id xterm -title t3 -e 'ranger; $SHELL'
-exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
-exec --no-startup-id xterm -title t5
-exec --no-startup-id xterm -title t6
+exec --no-startup-id termite -t t4 -e 'ncmpcpp'
+#exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
+#exec --no-startup-id xterm -title t5
+exec --no-startup-id termite -t t5
+#exec --no-startup-id xterm -title t6
+exec --no-startup-id xterm -title t6 -e 'mutt; $SHELL'
+exec --no-startup-id termite -t t9
 exec --no-startup-id xss-lock -- i3lock -n --color 2f343f
 exec --no-startup-id chromium
-exec --no-startup-id "i3-msg workspace number '4:'; exec xterm -e 'ssh dean@mini -t screen -U -D -R'"
+exec --no-startup-id "i3-msg workspace number '4:'; exec termite -e 'ssh dean@mini -t screen -UDR -T xterm-256color'"
 exec --no-startup-id "sh -c 'sleep 5; exec i3-msg workspace prev'

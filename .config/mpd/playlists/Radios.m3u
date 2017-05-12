@@ -1,0 +1,26 @@
+#EXTM3U
+
+#EXTINF:-1,SLAY Radio - 128kbps, relay1
+http://relay1.slayradio.org:8000/
+#EXTINF:-1,SLAY Radio - 128kbps, relay4
+http://relay4.slayradio.org:8000/
+#EXTINF:-1,Absolute 80s
+http://icy-e-bab-05-cr.sharp-stream.com/absolute80s.aac
+#EXTINF:-1,Absolute 90s
+http://icy-e-bab-01-gos.sharp-stream.com/absolute90s.aac
+#EXTINF:-1,Absolute Classic Rock
+http://icy-e-bab-06-cr.sharp-stream.com/absoluteclassicrock.aac
+#EXTINF:-1,Absolute 00s
+http://icy-e-bab-06-cr.sharp-stream.com/absolute00s.aac
+#EXTINF:-1,Mix 80s
+http://51.255.127.128:8016/
+#EXTINF:-1,Oldies FM 80s
+http://50.7.76.254:9908/
+#EXTINF:-1,Florida 80s
+http://airspectrum.cdnstream1.com:8018/1606_192
+#EXTINF:-1,Sid Station
+http://185.80.220.12:8054/
+#EXTINF:-1,C64 Station
+http://www.c64.com:8000
+#EXTINF:-1,WHCR
+http://s17.myradiostream.com:7776/

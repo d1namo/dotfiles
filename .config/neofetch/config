@@ -25,7 +25,7 @@ print_info() {
     #info "Icons" icons
     info "$(color 4)Terminal" term
     #    info "Terminal Font" term_font
-    prin "$(color 4)Terminal Font" "Fira Code Medium"
+    prin "$(color 4)Terminal Font" "Fira Mono for Powerline Medium"
     info "$(color 4)CPU" cpu
     info "$(color 4)GPU" gpu
     info "$(color 4)Memory" memory
@@ -617,7 +617,7 @@ crop_offset="center"
 # Values:  'auto', '00px', '00%', 'none'
 # Flags:   --image_size
 #          --size
-image_size="225px"
+image_size="auto"
 
 # Ggap between image and text
 #
