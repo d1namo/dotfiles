@@ -9,7 +9,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splith",
-            "percent": 0.167894736842105,
+            "percent": 0.157894736842105,
             "type": "con",
             "nodes": [
                 {
@@ -168,7 +168,7 @@
                             "percent": 0.333333333333333,
                             "swallows": [
                                {
-                                "class": "^Xterm$",
+                                "class": "^XTerm$",
                                 "instance": "^xterm$",
                                 "title": "^t6$"
                                }

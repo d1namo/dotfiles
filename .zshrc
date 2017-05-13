@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export RANGER_LOAD_DEFAULT_RC=FALSE
-export POWERLINE_PATH=short
+RANGER_LOAD_DEFAULT_RC=FALSE
+POWERLINE_DETECT_SSH="true"
+POWERLINE_PATH=short
+POWERLINE_NO_BLANK_LINE="true"
 # Path to your oh-my-zsh installation.
+
 ZSH=/usr/share/oh-my-zsh/
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -52,8 +55,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
+plugins=()
 
 # User configuration
 
