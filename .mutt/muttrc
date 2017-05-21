@@ -1,6 +1,6 @@
 set folder      = imaps://imap.gmail.com/
-set imap_user   = myusername@gmail.com
-set imap_pass   = my_pass
+set imap_user   = USERNAME@gmail.com
+set imap_pass   = PASSWORD
 set spoolfile   = +INBOX
 mailboxes       = +INBOX
 set certificate_file  = ~/.mutt/certificates
@@ -17,19 +17,20 @@ set delete
 set beep_new
 set smart_wrap
 set ssl_starttls = yes
-set realname = 'My Name'
+set realname = 'YOUR REAL NAME'
 set from = $imap_user
 set use_from = yes
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
-set text_flowed = yes 
 set sort = threads
 set sort_aux = reverse-last-date-received
 set date_format = "%d-%m-%y"
 set index_format = "[%Z]  %D  %-20.20F  %s" 
 set timeout = 30
-set pager_index_lines = 3
+set pager_index_lines = 5
 set pager_context = 3
 set pager_stop = yes
+set editor = "vim"
+set text_flowed = yes
 
 # Color Scheme {{{
 source ~/.mutt/nord.mutt
@@ -49,5 +50,5 @@ set trash = +[Gmail]/Bin
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
 # arch mailing lists: https://mailman.archlinux.org/mailman/listinfo/
-subscribe arch-dev-public@archlinux.org
-subscribe arch-devops@lists.archlinux.org
+#subscribe arch-dev-public@archlinux.org
+#subscribe arch-devops@lists.archlinux.org

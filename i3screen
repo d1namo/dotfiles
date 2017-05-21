@@ -12,4 +12,5 @@ n=0; while [[ $n -lt $count ]]; do eet 1>/dev/null; n=$(($n+1)); done
 echo "appending to $HOME/final.png"
 convert $tmppng/*.png +append $HOME/final.png
 rm $tmppng -rf
-
+echo "uploading to ptpb.pw"
+pbpst -Sf $HOME/final.png

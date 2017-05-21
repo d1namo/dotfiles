@@ -15,7 +15,7 @@ popup_during_fullscreen smart
 font pango:Fira Mono for Powerline Medium 10
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id xterm
+bindsym $mod+Return exec --no-startup-id termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -193,8 +193,7 @@ exec --no-startup-id xterm -fs 7 -title t2 -e 'sleep 3; ssh dean@mini -t journal
 exec --no-startup-id xterm -fs 7 -title t7 -e 'htop; $SHELL'
 exec --no-startup-id xterm -fs 7 -title t8 -e 'sleep 4; ssh dean@mini'
 exec --no-startup-id xterm -title t3 -e 'ranger; $SHELL'
-exec --no-startup-id termite -t t4 -e 'ncmpcpp'
-#exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
+exec --no-startup-id xterm -title t4 -e 'ncmpcpp; $SHELL'
 #exec --no-startup-id xterm -title t5
 exec --no-startup-id termite -t t5
 #exec --no-startup-id xterm -title t6
