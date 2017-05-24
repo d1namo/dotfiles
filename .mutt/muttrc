@@ -3,15 +3,16 @@ set imap_user   = USERNAME@gmail.com
 set imap_pass   = PASSWORD
 set spoolfile   = +INBOX
 mailboxes       = +INBOX
-set certificate_file  = ~/.mutt/certificates
+set record= "+Gmail/Sent\ Items"
 set postponed = +[Gmail]/Drafts
-unset imap_passive
+set trash = +[Gmail]/Bin
+set certificate_file  = ~/.mutt/certificates
 set mailcap_path 	= ~/.mutt/mailcap
+unset imap_passive
 auto_view text/html
 #alternative_order text/plain text/html
 set imap_keepalive = 300
 set copy = no
-set record= "+Gmail/Sent\ Items"
 unset move
 set delete
 set beep_new
@@ -44,7 +45,6 @@ bind pager g top
 bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
-set trash = +[Gmail]/Bin
 
 #macros
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
