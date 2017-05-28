@@ -1,16 +1,20 @@
 set folder      = imaps://imap.gmail.com/
-set imap_user   = USERNAME@gmail.com
-set imap_pass   = PASSWORD
+set imap_user   = USER@gmail.com
+set imap_pass   = PASS
 set spoolfile   = +INBOX
 mailboxes       = +INBOX
-set record= "+Gmail/Sent\ Items"
+unset record
 set postponed = +[Gmail]/Drafts
 set trash = +[Gmail]/Bin
-set certificate_file  = ~/.mutt/certificates
 set mailcap_path 	= ~/.mutt/mailcap
-unset imap_passive
+set certificate_file  = ~/.mutt/certificates
+set alias_file = "~/.mutt/aliases"
+set sort_alias = alias
+set reverse_alias = yes
+source $alias_file
+set imap_passive
 auto_view text/html
-#alternative_order text/plain text/html
+alternative_order text/plain text/html
 set imap_keepalive = 300
 set copy = no
 unset move
@@ -18,10 +22,11 @@ set delete
 set beep_new
 set smart_wrap
 set ssl_starttls = yes
-set realname = 'YOUR REAL NAME'
+set realname = 'REAL NAME'
 set from = $imap_user
 set use_from = yes
 set smtp_url=smtps://$imap_user:$imap_pass@smtp.gmail.com
+set text_flowed = yes 
 set sort = threads
 set sort_aux = reverse-last-date-received
 set date_format = "%d-%m-%y"
@@ -32,6 +37,8 @@ set pager_context = 3
 set pager_stop = yes
 set editor = "vim"
 set text_flowed = yes
+set fast_reply=yes
+set include=yes
 
 # Color Scheme {{{
 source ~/.mutt/nord.mutt
@@ -46,9 +53,11 @@ bind pager G bottom
 bind attach,index g first-entry
 bind attach,index G last-entry
 
-#macros
 macro pager \cb <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+macro index ga "<change-folder> =[Gmail]/All<tab><enter>" "Go to All Mail"
+macro index gs "<change-folder> =[Gmail]/Sent<tab><enter>" "Go to sent mail"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 
 # arch mailing lists: https://mailman.archlinux.org/mailman/listinfo/
-#subscribe arch-dev-public@archlinux.org
-#subscribe arch-devops@lists.archlinux.org
+subscribe arch-dev-public@archlinux.org
+subscribe arch-devops@lists.archlinux.org
