@@ -11,7 +11,7 @@ SAVEHIST=1000
 
 POWERLEVEL9K_MODE='awesome-fontconfig'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator background_jobs time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator time)
 source $HOME/.colors/powerlevel9k/powerlevel9k.zsh-theme
 
 autoload -Uz compinit up-line-or-beginning-search down-line-or-beginning-search
@@ -44,6 +44,7 @@ alias router='ssh admin@192.168.1.1'
 alias pi='ssh pi@retropie'
 alias printeron='sudo systemctl start org.cups.cupsd'
 alias printeroff='sudo systemctl stop org.cups.cupsd'
+alias gitver='git log -1 --format=%cd.%h --date=short|tr -d -'
 
 # Colour man pages
 man() {

@@ -1,10 +1,11 @@
 #!/bin/sh
 tmppng=/tmp/i3scrots
+
 [[ ! -d $tmppng ]] && mkdir $tmppng
 count=$(i3-msg -t get_workspaces | grep -Eo visible | wc -w)
 
 eet() {
-        maim -q -d2 -u $tmppng/$n.png && i3-msg workspace next
+        scrot -d2 $tmppng/$n.png && i3-msg workspace next
 }
 
 n=0; while [[ $n -lt $count ]]; do eet 1>/dev/null; n=$(($n+1)); done
@@ -12,5 +13,5 @@ n=0; while [[ $n -lt $count ]]; do eet 1>/dev/null; n=$(($n+1)); done
 echo "appending to $HOME/final.png"
 convert $tmppng/*.png +append $HOME/final.png
 rm $tmppng -rf
-echo "uploading to ptpb.pw"
-pbpst -Sf $HOME/final.png
+# echo "uploading to ptpb.pw"
+# pbpst -Sf $HOME/final.png
